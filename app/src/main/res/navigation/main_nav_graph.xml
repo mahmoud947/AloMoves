@@ -10,4 +10,9 @@
         android:name="com.example.alomoves.ui.overView.OverViewFragment"
         android:label="fragment_over_view"
         tools:layout="@layout/fragment_over_view" />
+    <fragment
+        android:id="@+id/classesFragment"
+        android:name="com.example.alomoves.ui.classes.ClassesFragment"
+        android:label="fragment_classes"
+        tools:layout="@layout/fragment_classes" />
 </navigation>

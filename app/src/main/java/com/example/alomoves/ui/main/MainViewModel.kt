@@ -23,7 +23,7 @@ class MainViewModel @Inject constructor(
         viewModelScope.launch(Dispatchers.IO) {
             _overView.postValue(Resource.Loading)
             try {
-                val response = repository.getDemoRes()
+                val response = repository.getOverView()
                 _overView.postValue(Resource.Success(response))
             } catch (e: Exception) {
                 _overView.postValue(Resource.Error(e))

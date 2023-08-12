@@ -22,7 +22,8 @@ data class Data(
 data class Instructor(
     val about: String,
     val name: String,
-    val status: Status
+    val status: Status,
+    val video:String
 )
 
 @Keep

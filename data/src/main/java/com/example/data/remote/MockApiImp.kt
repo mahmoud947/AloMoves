@@ -1,6 +1,7 @@
 package com.example.data.remote
 
 import android.content.Context
+import com.example.data.models.response.Classes
 import com.example.data.models.response.OverView
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
@@ -17,7 +18,7 @@ class MockApiImp (private val context: Context): MockApi {
         return withContext(Dispatchers.Default) {
             try {
                 val mockResponseJson = readMockResponse("response.json")
-                val mockResponseMap = Gson().fromJson(mockResponseJson, Map::class.java) as Map<String, Any>
+                val mockResponseMap = Gson().fromJson(mockResponseJson, Map::class.java) as Map<*, *>
                 val endpointResponse = mockResponseMap[endpoint] as? Map<*, *>
 
                 Gson().toJson(
@@ -38,8 +39,12 @@ class MockApiImp (private val context: Context): MockApi {
         }
     }
     override suspend fun getOverView(): OverView {
-       val response = mockApiCall( endpoint = "overview")
-       val overView:OverView = Gson().fromJson(response,OverView::class.java)
-        return overView
+        val response = mockApiCall(endpoint = "overview")
+        return Gson().fromJson(response, OverView::class.java)
+    }
+
+    override suspend fun getClasses(): Classes {
+        val response = mockApiCall(endpoint = "classes")
+        return Gson().fromJson(response, Classes::class.java)
     }
 }

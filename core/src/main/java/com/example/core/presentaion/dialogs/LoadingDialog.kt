@@ -24,7 +24,6 @@ import com.example.core.extensions.hideKeyboard
 
 class LoadingDialog constructor(
     private val activity: Activity,
-    private val navController: NavController
 ) {
     private lateinit var binding: LoadingDialogBinding
     private lateinit var dialog: AlertDialog
@@ -47,15 +46,15 @@ class LoadingDialog constructor(
         dialog.window?.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
         dialog.show()
 
-        dialog.setOnKeyListener { dialog, keyCode, event ->
-            if (keyCode == KeyEvent.KEYCODE_BACK && event.action == KeyEvent.ACTION_UP) {
-                activity.hideKeyboard()
-                navController.popBackStack()
-                dialog.dismiss()
-            }
-
-            true
-        }
+//        dialog.setOnKeyListener { dialog, keyCode, event ->
+//            if (keyCode == KeyEvent.KEYCODE_BACK && event.action == KeyEvent.ACTION_UP) {
+//                activity.hideKeyboard()
+//                navController.popBackStack()
+//                dialog.dismiss()
+//            }
+//
+//            true
+//        }
     }
 
 

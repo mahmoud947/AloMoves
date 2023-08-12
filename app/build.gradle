@@ -76,4 +76,7 @@ dependencies {
     //image
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    //exp Video player
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.0'
+
 }

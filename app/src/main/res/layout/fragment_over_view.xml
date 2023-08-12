@@ -17,7 +17,15 @@
 
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:text="About the series"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/tv_over_view"
                 android:layout_width="wrap_content"
@@ -57,10 +65,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
+                        android:layout_marginTop="8dp"
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/iv_instructor"
+                            android:layout_marginHorizontal="8dp"
                             android:layout_width="100dp"
                             android:layout_height="100dp" />
 
@@ -90,7 +100,9 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/tv_about_instructor"
                         android:layout_width="wrap_content"
+                        android:layout_marginTop="16dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="8dp"
                         android:text="sdfjkajkfjdskfjjjjjjjjjjjjjjjjssdfjkajkfjdskfjjjjjjjjjjjjjjjjssdfjkajkfjdskfjjjjjjjjjjjjjjjjssdfjkajkfjdskfjjjjjjjjjjjjjjjjs"

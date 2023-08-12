@@ -13,8 +13,51 @@
           "runTime": "03 hrs 08 mins(7Videws)",
           "difficulty": "Intermediate",
           "intensity": 4
-        }
+        },
+        "video": "videoplayback.mp4"
       }
+    }
+  },
+
+
+
+
+
+  "classes": {
+    "status": "success",
+    "data": {
+      "videos": [
+        {
+          "title": "Day1 UPPER BODY STRENGTH",
+          "time": "30:46",
+          "video": "videoplayback.mp4",
+          "description": "Test Your Strength and Determination. This upper-body workout will condition your arms."
+        },
+        {
+          "title": "Full Body HIIT Workout",
+          "time": "25:15",
+          "video": "upper.mp4",
+          "description": "A high-intensity interval training (HIIT) session that targets your entire body for a quick and effective workout."
+        },
+        {
+          "title": "Yoga for Flexibility",
+          "time": "40:00",
+          "video": "lower.mp4",
+          "description": "Join this soothing yoga practice to improve your flexibility and promote relaxation."
+        },
+        {
+          "title": "Cardio Kickboxing",
+          "time": "45:30",
+          "video": "videoplayback.mp4",
+          "description": "Get your heart pumping with this energetic cardio kickboxing routine that combines martial arts and cardio exercises."
+        },
+        {
+          "title": "Lower Body Sculpting",
+          "time": "35:20",
+          "video": "upper.mp4",
+          "description": "Focus on your lower body with this sculpting workout that targets your legs, glutes, and thighs."
+        }
+      ]
     }
   }
 }

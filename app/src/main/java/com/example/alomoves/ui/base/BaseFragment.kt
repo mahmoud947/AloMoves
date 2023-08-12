@@ -23,7 +23,7 @@ abstract class BaseFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        loadingDialog = LoadingDialog(requireActivity(), findNavController())
+        loadingDialog = LoadingDialog(requireActivity())
         errorDialog = ErrorDialog(activity = requireActivity(), buttonTitle = "Retry")
         uriPathHelper = UriPathHelper()
     }

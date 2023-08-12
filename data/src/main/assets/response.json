@@ -1,0 +1,20 @@
+{
+  "overview": {
+    "status": "success",
+    "data": {
+      "coverPhoto": "https://blog.nasm.org/hubfs/intro-to-bodybuilding.jpg",
+      "seriesName": "The Challenge",
+      "coachesName": "Josh Kramer",
+      "overView": "By the end of the challenge, you'll have improved your fitness levels, built healthy habits, and gained a better understanding of your body's capabilities.Remember that this is a general overview, and you can customize the challenge based on your individual goals and preferences. Stay committed, stay motivated, and enjoy the process of transforming your fitness and well-being over the course of the month!",
+      "instructor": {
+        "name": "Josh Kramer",
+        "about": "Josh is an international yoga teacher , who grew up in zimbabwe. he spend his youth in New zealand, where he developed his passion for yoga",
+        "status": {
+          "runTime": "03 hrs 08 mins(7Videws)",
+          "difficulty": "Intermediate",
+          "intensity": 4
+        }
+      }
+    }
+  }
+}
